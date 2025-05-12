@@ -1,0 +1,59 @@
+.summery-container{
+    margin-top: 78px;
+    background-color: #f2fffa;
+    height: fit-content;
+    padding: 50px 0px;
+    margin-bottom: 80px;
+}
+
+.name{
+    font-size: 24px;
+    color: #424242;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.job{
+    font-size: 18px;
+    color: #8bc34a;
+    border-bottom: 0.01px solid #dadada !important;
+}
+
+p{
+    padding-right: 10px;
+}
+
+ol{
+    list-style-type:initial;
+}
+
+.row .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top:4%;
+    padding-bottom: 5%;
+}
+
+.educational-background{
+    opacity: 0;
+}
+.educational-background.active{
+    position: relative;
+    right: 0px;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        bottom: -15px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+}

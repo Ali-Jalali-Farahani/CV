@@ -1,0 +1,39 @@
+#navbar-container{
+    direction: rtl;
+
+    position: fixed;
+    top: 0;
+    margin: 0;
+
+    height: 70px;
+    width: 100%;
+    background-color: rgb(1, 105, 1);
+    color: white;
+}
+
+.Navbar{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+
+.item{
+    line-height: 70px;
+    margin: 0 11px;
+    padding: 0 7px;
+    font-size: 90%;
+}
+
+.item:hover{
+    background-color: rgb(6, 41, 6);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    .Navbar{
+        opacity: 0;
+    }
+    
+}

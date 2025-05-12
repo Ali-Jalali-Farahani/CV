@@ -1,0 +1,21 @@
+.educational-background{
+    max-width: 960px;
+    background-color: #e7dbdb54;
+    margin: 0 auto;
+}
+
+.main_title{
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 40px;
+}
+
+.university_details{
+    text-align: center;
+    border: 2px solid green;
+    max-width: 960px;
+    margin: 25px auto;
+}
