@@ -29,7 +29,6 @@ export default function Educational_background() {
         </div>
         <div className='university_details'>
             <h5>کارشناسی مهندسی کامپیوتر</h5>
-            <h6>بدون گرایش</h6>
             <h6>دانشگاه:دولتی سمنان</h6>
         </div>
     </div>

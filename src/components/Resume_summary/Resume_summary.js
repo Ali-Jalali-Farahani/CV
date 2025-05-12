@@ -19,7 +19,7 @@ export default function Resume_summary() {
           </Col>
 
           <Col xs={12} sm={7} md={7}>
-            <p>
+            <p style={{paddingRight:"40px"}} className="summary">
               <h3 className="name">علی جلالی فراهانی</h3>
               <h5 className="job">برنامه نویس فرانت سایت</h5>
               برنامه نویس فرانت سایت با فریم ورک React <br />
