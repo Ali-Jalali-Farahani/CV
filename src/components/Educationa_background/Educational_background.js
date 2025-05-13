@@ -1,4 +1,4 @@
-import React ,{useRef,useEffect}  from 'react'
+import React,{useRef,useEffect} from 'react'
 import "./Educational_background.css"
 
 //function for observer {run when element is visible}
@@ -18,12 +18,12 @@ const observer = new IntersectionObserver(
 );
 
 export default function Educational_background() {
-  const elementRef = useRef(null);
+  const elementRef = useRef();
 
   useEffect(() => {observer.observe(elementRef.current)},[])
 
   return (
-    <div ref={elementRef} className='educational-background'>
+    <div ref={elementRef} id='educational-background'>
         <div className='main_title'>
             <h5>سوابق تحصیلی</h5>
         </div>

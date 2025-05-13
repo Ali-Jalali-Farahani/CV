@@ -32,10 +32,28 @@ export default function Navbar() {
     <div id="navbar-container">
         <ul className={`Navbar ${showMenu ? 'active' : ''}`}>
             <CloseIcon style={{ fontSize: '60px',display:`${showCloseIcon ? 'inline-block' : 'none'} `}} onClick={() => setShowMenu(!showMenu)} />
-            <li className='item'>خلاصه رزومه</li>
-            <li className='item'>سوابق تحصیلی</li>
-            <li className='item'>مهارت ها</li>
-            <li className='item'>راه های ارتباطی</li>
+
+            <a style={{color:'white',textDecoration:"none"}} href="#summery-container">
+              <li className='item'>
+                خلاصه رزومه
+              </li>
+            </a>
+
+            <a style={{color:'white',textDecoration:"none"}} href="#educational-background">
+              <li className='item'>
+                سوابق تحصیلی
+              </li>
+            </a>
+
+            <a style={{color:'white',textDecoration:"none"}} href="#skill-container">
+              <li className='item'>
+                مهارت ها
+              </li>
+            </a>
+
+            <li className='item'>
+              {"تماس با من(در دست ساخت)"}
+            </li>
         </ul>
         <div className='menu-icon' onClick={() => setShowMenu(!showMenu)}>
           <MenuIcon style={{ fontSize: '60px' }} />

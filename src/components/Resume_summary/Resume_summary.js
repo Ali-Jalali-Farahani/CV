@@ -9,7 +9,7 @@ export default function Resume_summary() {
   
   return (
     <>
-      <Container className="summery-container">
+      <Container id="summery-container">
         <Row>
           <Col xs={12} sm={5} md={5} className="image">
             <img

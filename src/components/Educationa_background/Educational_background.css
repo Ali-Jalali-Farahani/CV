@@ -1,7 +1,9 @@
-.educational-background{
+#educational-background{
     max-width: 960px;
     background-color: #e7dbdb54;
     margin: 0 auto;
+    padding:30px 0;
+    opacity: 0;
 }
 
 .main_title{
@@ -18,4 +20,23 @@
     border: 2px solid green;
     max-width: 960px;
     margin: 25px auto;
+}
+
+#educational-background.active{
+    position: relative;
+    opacity: 1;
+    animation: showEducationalBackground 1s ease-in-out;
+}
+
+
+@keyframes showEducationalBackground {
+    from {
+        opacity: 0;
+        bottom: -15px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+    
 }
