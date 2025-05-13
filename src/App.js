@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Resume_summary />
+      <Resume_summary style={{backgroundColor:"white"}} />
       <Educational_background/>
 
       {/*skills*/}

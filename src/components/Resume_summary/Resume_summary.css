@@ -1,8 +1,11 @@
 #summery-container{
     margin-top: 110px;
-    background-color: #f2fffa;
-    height: fit-content;
+    margin-bottom: 46px;
     padding: 65px 0px;
+    height: fit-content;
+    width: 80%;
+    border-radius: 73px;
+    background-color: #f2fffa;
 }
 
 .name{

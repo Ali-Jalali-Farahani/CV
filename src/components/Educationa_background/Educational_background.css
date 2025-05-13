@@ -1,9 +1,10 @@
 #educational-background{
-    max-width: 960px;
-    background-color: #e7dbdb54;
+    background-color: #c6f0c4;
     margin: 0 auto;
     padding:30px 0;
     opacity: 0;
+    width: 80%;
+    border-radius: 33px
 }
 
 .main_title{

@@ -1,7 +1,12 @@
-#skill-container{
-    width: 100%;
-}
+.skills{
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #367d9e;
+    color: white;
+    border-radius: 20px;
 
+}
 progress{
     appearance: none;
     direction: rtl;
@@ -9,19 +14,17 @@ progress{
 }
 
 progress::-webkit-progress-bar {
-  background-color: white;   /* رنگ دلخواهِ زمینه */
-  border-radius: 20px;          /* گوشه‌های گرد */
-  border: 2px solid #1a1e27; /* رنگ دلخواهِ حاشیه */
+  background-color: white;  
+  border-radius: 20px;         
+  border: 2px solid #1a1e27;
 }
 
-/* بخش پُر-شدهٔ نوار در WebKit */
 progress::-webkit-progress-value {
-  background-color: #38e452;   /* رنگ دلخواهِ پیشرفت */
-  border-radius: 6px;          /* برای هم‌سطح شدن با لبه‌ها */
+  background-color: #38e452;  
+  border-radius: 6px;         
   transition: width 2s ease-out;
 }
 
-/* فایرفاکس (مقیاس موزیلا) */
 progress::-moz-progress-bar {
   background-color: #3b82f6;
   border-radius: 6px;
