@@ -1,8 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import "./Skill.css"
 
-
-
 export default function Skill({name,value}) {
   const elementRef = useRef();
 
@@ -28,6 +26,7 @@ export default function Skill({name,value}) {
     return () => {
       observer.unobserve(elementRef.current);
     };
+    
   },[])
 
   return (

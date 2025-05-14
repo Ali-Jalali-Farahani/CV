@@ -1,21 +1,7 @@
 import React,{useRef,useEffect} from 'react'
 import "./Educational_background.css"
-
+import {observer} from '../../functions';
 //function for observer {run when element is visible}
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if(!entry.target.classList.contains("active")){
-          entry.target.classList.add("active");
-        }
-      }
-    });
-  },
-  {
-    threshold:0.7, // فقط وقتی حداقل 10٪ از عنصر داخل صفحه دید باشه
-  }
-);
 
 export default function Educational_background() {
   const elementRef = useRef();
