@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import Resume_summary from './components/Resume_summary/Resume_summary';
 import Educational_background from './components/Educationa_background/Educational_background';
 import Skill from './components/Skill/Skill';
+import Individual_characteristics from './components/Individual_characteristics/Individual_characteristics';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <Individual_characteristics/>
     </>
   );
 }
