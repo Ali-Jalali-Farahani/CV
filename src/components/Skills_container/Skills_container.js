@@ -1,6 +1,7 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Skill from '../Skill/Skill';
+import { SwitchLanguage } from "../../Contexts/Switch_language";
 
 export default function Skills_container() {
   return (

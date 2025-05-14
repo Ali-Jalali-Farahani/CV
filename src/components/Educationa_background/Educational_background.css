@@ -1,10 +1,11 @@
 #educational-background{
-    background-color: #c6f0c4;
+    background-color: #e2effa;
     margin: 0 auto;
     padding:30px 0;
     opacity: 0;
     width: 80%;
-    border-radius: 33px
+    border-radius: 33px;
+    box-shadow: 0 4px 20px 3px;
 }
 
 .main_title{
