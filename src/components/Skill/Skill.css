@@ -2,15 +2,16 @@
     width: 80%;
     margin-top: 70px;
     margin-bottom: 70px;
+    border-radius: 20px;
     background-color: #367d9e;
     color: white;
-    border-radius: 20px;
-
+    direction: rtl;
 }
+
 progress{
+    width: 100%;
     appearance: none;
     direction: rtl;
-    width: 100%;
 }
 
 progress::-webkit-progress-bar {

@@ -17,9 +17,12 @@ export default function Resume_summary() {
           <p style={{ paddingRight: "40px",direction:"rtl" }} className="summary">
             <h3 className="name">علی جلالی فراهانی</h3>
             <h5 className="job">برنامه نویس فرانت سایت</h5>
-            برنامه نویس فرانت سایت با فریم ورک React <br />
-            مسلط به تمامی مباحث پایه HTML,CSS,Javascript <br />
-            در زمینه React مسلط به مباحث اصلی و پایه و پیشرفته از جمله: <br />
+            <p style={{ whiteSpace: 'pre-line' }}>
+              {`برنامه نویس فرانت سایت با فریم ورک React
+              مسلط به تمامی مباحث پایه HTML,CSS,Javascript
+              در زمینه React مسلط به مباحث اصلی و پایه و پیشرفته از جمله:`}
+            </p>
+
             <ol>
               <li className="option">Hook / custom Hook</li>
               <li className="option">React Bootstrap / MUI</li>
