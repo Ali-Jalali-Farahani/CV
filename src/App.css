@@ -1,0 +1,9 @@
+p{
+    white-space: pre-line;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.mobileSize p{
+    padding:0 6px;
+}

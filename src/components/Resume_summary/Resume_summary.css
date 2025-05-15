@@ -9,6 +9,10 @@
     box-shadow: 0 4px 20px 3px;
 }
 
+#summery-container.mobileSize{
+    width: 90%;
+}
+
 .name{
     font-size: 24px;
     color: #424242;
@@ -24,9 +28,7 @@
     border-bottom: 0.01px solid #dadada !important;
 }
 
-p{
-    padding-right: 10px;
-}
+
 
 ol{
     list-style-type:initial;

@@ -8,9 +8,9 @@ export default function Individual_characteristics() {
   return (
     <div id='individual_container' style={{direction:"rtl"}}>
         {changeToEnglish ? (
-            <div style={{textAlign:"left"}}>
+            <div style={{direction:"ltr"}}>
               <h5>Personal Characteristics</h5>
-              <p className='individual_characteristics_description'>
+              <p className='individual_characteristics_description' style={{direction:"ltr" }}>
                 {`I live in Iran, Tehran
                 Born 07/1380 (23 years old)
                 
