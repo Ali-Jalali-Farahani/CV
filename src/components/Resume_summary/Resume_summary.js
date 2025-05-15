@@ -18,9 +18,10 @@ export default function Resume_summary() {
         setMobileSize(true);
       }
     }
-  )
-  
+    );
+    window.innerWidth > 576 ? setMobileSize(false) : setMobileSize(true);
   }, []);
+
   return (
     <Container id="summery-container">
       <Row>
