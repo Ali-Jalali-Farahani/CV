@@ -31,7 +31,7 @@ export default function Skill({name,value}) {
 
   return (
     <div id='skill-container'>
-      <p>{name}</p>
+      <p id='skill_name'>{name}</p>
       <progress ref={elementRef} max={100} value={0}>test</progress>
     </div>
   )

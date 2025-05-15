@@ -20,6 +20,7 @@
 .job{
     font-size: 18px;
     color: #8bc34a;
+    padding: 0;
     border-bottom: 0.01px solid #dadada !important;
 }
 

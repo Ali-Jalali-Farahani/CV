@@ -1,11 +1,5 @@
-.skills{
-    width: 80%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    border-radius: 20px;
-    background-color: #305176;
-    color: white;
-    direction: rtl;
+#skill_name{
+  margin: 0;
 }
 
 progress{

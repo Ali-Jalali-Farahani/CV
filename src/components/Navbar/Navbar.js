@@ -4,6 +4,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { SwitchLanguage } from "../../Contexts/Switch_language";
 
+
+function scroll(id){
+  window.scrollTo({
+    top: document.getElementById(id).offsetTop-70,
+  });
+}
+
 export default function Navbar() {
 
   const [showMenu, setShowMenu] = useState(true);
@@ -35,58 +42,48 @@ export default function Navbar() {
 
   return (
     <div id="navbar-container">
-        <p id='change_language' onClick={()=>{setChangeToEnglish(prev=>!prev);console.log(changeToEnglish)}}>{changeToEnglish?"FA":"EN"}</p>
+        <p id='change_language' style={{cursor:"pointer"}} onClick={()=>{setChangeToEnglish(prev=>!prev);console.log(changeToEnglish)}}>{changeToEnglish?"FA":"EN"}</p>
             {changeToEnglish? (
               <ul className={`Navbar ${showMenu ? 'active' : ''}`} style={{direction:"ltr"}}>  
                 <CloseIcon style={{ fontSize: '60px',display:`${showCloseIcon ? 'inline-block' : 'none'} `}} onClick={() => setShowMenu(!showMenu)} />
 
-                <a style={{color:'white',textDecoration:"none"}} href="#summery-container">
-                  <li className='item'>
-                    Resume summary
-                  </li>
-                </a>
-              
-                <a style={{color:'white',textDecoration:"none"}} href="#educational-background">
-                  <li className='item'>
-                    Educational background
-                  </li>
-                </a>
-              
-                <a style={{color:'white',textDecoration:"none"}} href="#skill-container">
-                  <li className='item'>
-                    Skills
-                  </li>
-                </a>
-              
-                <li className='item'>
-                  {"Contact me (under construction)"}
+                <li className="item" onClick={() => scroll("summery-container")}>
+                  Resume Summary
+                </li>
+                            
+                <li className="item" onClick={() => scroll("educational-background")}>
+                  Educational Background
+                </li>
+                            
+                <li className="item" onClick={() => scroll("skill-container")}>
+                  Skills
+                </li>
+                            
+                <li className="item" onClick={() => scroll("individual_container")}>
+                  Personal Characteristics
                 </li>
               </ul>
             ):(
               <ul className={`Navbar ${showMenu ? 'active' : ''}`}>
                 <CloseIcon style={{ fontSize: '60px',display:`${showCloseIcon ? 'inline-block' : 'none'} `}} onClick={() => setShowMenu(!showMenu)} />
                   
-                <a style={{color:'white',textDecoration:"none"}} href="#summery-container">
-                  <li className='item'>
-                    خلاصه رزومه
-                  </li>
-                </a>
-
-                <a style={{color:'white',textDecoration:"none"}} href="#educational-background">
-                  <li className='item'>
-                    سوابق تحصیلی
-                  </li>
-                </a>
-
-                <a style={{color:'white',textDecoration:"none"}} href="#skill-container">
-                  <li className='item'>
-                    مهارت ها
-                  </li>
-                </a>
-
-                <li className='item'>
-                  {"تماس با من(در دست ساخت)"}
+                <li className='item' onClick={()=>{scroll("summery-container")}}>
+                  خلاصه رزومه
                 </li>
+
+                <li className='item' onClick={()=>{scroll("educational-background")}}>
+                  سوابق تحصیلی
+                </li>
+
+
+                <li className='item' onClick={()=>{scroll("skill-container")}}>
+                  مهارت ها
+                </li>
+
+                <li className='item' onClick={()=>{scroll("individual_container")}}>
+                  ویژگی های شخصی
+                </li>
+
               </ul>
             )}
 
