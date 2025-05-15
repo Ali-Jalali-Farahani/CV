@@ -28,7 +28,6 @@ export default function Information_section_EN() {
             <p style={{direction:"ltr" }}>
               {`
               Interested in learning more advanced topics such as Next.js
-              After mastering front-end development, I quickly transitioned to learning a back-end framework (both personal interest and company requirement).
               `}
             </p>
           </p>  

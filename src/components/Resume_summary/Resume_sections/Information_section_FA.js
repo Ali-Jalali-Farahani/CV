@@ -25,7 +25,7 @@ export default function Information_section_FA() {
             <br />
             <p>
               {`علاقه‌مند به یادگیری مباحث پیشرفته‌تر مثل Next.js
-              پس از مسلط شدن به frontend در کوتاه ترین زمان(حدود دو ماه) شروع به یادگیری یک backend framework(هم علاقه شخصی هم نیاز شرکت)`}
+              `}
             </p>
           </p>  
         </Col>
