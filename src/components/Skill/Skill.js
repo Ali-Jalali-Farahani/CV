@@ -11,7 +11,6 @@ export default function Skill({name,value}) {
           if (entry.isIntersecting) {
             if(!entry.target.classList.contains("active")){
               entry.target.classList.add("active");
-              console.log(entry.target);
               entry.target.value = value;
             }
           }

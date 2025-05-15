@@ -1,12 +1,12 @@
-import React,{useContext} from 'react'
+import React,{useEffect, useContext} from 'react'
 import './Individual_characteristics.css'
-import { SwitchLanguage } from "../../Contexts/Switch_language";
+import { My_context } from "../../Contexts/My_context";
 
-export default function Individual_characteristics() {
-    const { changeToEnglish } = useContext(SwitchLanguage);
-
+export default function Individual_characteristics({mobileSize}) {
+    const { changeToEnglish } = useContext(My_context);
+    useEffect(() => {console.log("tt"+mobileSize)},[])
   return (
-    <div id='individual_container' style={{direction:"rtl"}}>
+    <div id='individual_container' style={{direction:"rtl"}} className={`${mobileSize ? "mobileSize":""}`}>
         {changeToEnglish ? (
             <div style={{direction:"ltr"}}>
               <h5>Personal Characteristics</h5>

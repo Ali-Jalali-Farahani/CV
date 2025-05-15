@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 //components
 import Navbar from './components/Navbar/Navbar';
@@ -9,20 +9,35 @@ import Individual_characteristics from './components/Individual_characteristics/
 import Skills_container from './components/Skills_container/Skills_container';
 
 //context
-import { SwitchLanguage } from "./Contexts/Switch_language";
+import { My_context } from "./Contexts/My_context";
 
 function App() {
   const [changeToEnglish, setChangeToEnglish] = useState(false);
 
+  const [mobileSize, setMobileSize] = useState(false);
+
+  // Check if the screen size is mobile or not
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 576) {
+        setMobileSize(false);
+      } else {
+        setMobileSize(true);
+      }
+    }
+    );
+    window.innerWidth > 576 ? setMobileSize(false) : setMobileSize(true);
+  }, []);
+
   return (
     <>
-      <SwitchLanguage.Provider value={{ changeToEnglish, setChangeToEnglish }}>
+      <My_context.Provider value={{ changeToEnglish,setChangeToEnglish,mobileSize}}>
         <Navbar />
         <Resume_summary/>
         <Educational_background/>
         <Skills_container/>
         <Individual_characteristics/>
-      </SwitchLanguage.Provider>
+      </My_context.Provider>
     </>
   );
 }

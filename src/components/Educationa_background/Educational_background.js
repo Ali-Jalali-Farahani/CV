@@ -1,14 +1,14 @@
 import React,{useRef,useEffect,useContext} from 'react'
 import "./Educational_background.css"
 import {observer} from '../../functions';
-import { SwitchLanguage } from "../../Contexts/Switch_language";
+import { My_context } from "../../Contexts/My_context";
 
 //function for observer {run when element is visible}
 
 export default function Educational_background() {
   const elementRef = useRef();
 
-  const { changeToEnglish } = useContext(SwitchLanguage);
+  const { changeToEnglish } = useContext(My_context);
   useEffect(() => {observer.observe(elementRef.current)},[])
 
   return (

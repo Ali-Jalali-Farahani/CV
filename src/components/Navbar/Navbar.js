@@ -2,7 +2,7 @@ import React , {useState,useEffect,useContext} from 'react'
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { SwitchLanguage } from "../../Contexts/Switch_language";
+import { My_context } from "../../Contexts/My_context";
 
 
 function scroll(id){
@@ -38,11 +38,11 @@ export default function Navbar() {
   
     
   //useContext to change language
-  const { changeToEnglish, setChangeToEnglish } = useContext(SwitchLanguage); 
+  const { changeToEnglish, setChangeToEnglish } = useContext(My_context); 
 
   return (
     <div id="navbar-container">
-        <p id='change_language' style={{cursor:"pointer"}} onClick={()=>{setChangeToEnglish(prev=>!prev);console.log(changeToEnglish)}}>{changeToEnglish?"FA":"EN"}</p>
+        <p id='change_language' style={{cursor:"pointer"}} onClick={()=>{setChangeToEnglish(prev=>!prev);}}>{changeToEnglish?"FA":"EN"}</p>
             {changeToEnglish? (
               <ul className={`Navbar ${showMenu ? 'active' : ''}`} style={{direction:"ltr"}}>  
                 <CloseIcon style={{ fontSize: '60px',display:`${showCloseIcon ? 'inline-block' : 'none'} `}} onClick={() => setShowMenu(!showMenu)} />

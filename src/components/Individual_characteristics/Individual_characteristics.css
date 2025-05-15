@@ -7,6 +7,10 @@
     background-color: #f2fffa;
 }
 
+#individual_container.mobileSize{
+    width: 90%;
+}
+
 .individual_characteristics_description{
     white-space: pre-line;
     line-height: 40px;
