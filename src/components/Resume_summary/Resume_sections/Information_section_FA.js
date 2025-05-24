@@ -11,6 +11,7 @@ export default function Information_section_FA() {
             <p>
               {`برنامه نویس فرانت سایت با فریم ورک React
               مسلط به تمامی مباحث پایه HTML,CSS,Javascript
+              در حال یادگیری typescript به صورت کامل
               در زمینه React مسلط به مباحث اصلی و پایه و پیشرفته از جمله:`}
             </p>
             
@@ -23,10 +24,6 @@ export default function Information_section_FA() {
               <li className="option">context API</li>
             </ol>
             <br />
-            <p>
-              {`علاقه‌مند به یادگیری مباحث پیشرفته‌تر مثل Next.js
-              `}
-            </p>
           </p>  
         </Col>
     </>

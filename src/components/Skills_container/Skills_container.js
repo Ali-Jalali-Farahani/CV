@@ -22,6 +22,13 @@ export default function Skills_container() {
           <Col xs={12} sm={6} md={4}>
             <Skill name="React" value={60}/>
           </Col>
+
+          <Col xs={12} sm={6} md={4}>
+            <Skill name="Learning will end soon-Typescript" value={70}/>
+          </Col>
+          <Col xs={12} sm={6} md={4}>
+            <Skill name="Git and Github" value={80}/>
+          </Col>
         </Row>
       </Container>
   )

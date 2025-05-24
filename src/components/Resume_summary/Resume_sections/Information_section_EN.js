@@ -12,6 +12,7 @@ export default function Information_section_EN() {
               {
               `Front-end web developer specializing in the React framework
               Strong command of core web technologies: HTML, CSS, and JavaScript
+              Learning TypeScript in full.
               Proficient in React, including both foundational and advanced concepts such as:
               `}
             </p>
@@ -25,11 +26,6 @@ export default function Information_section_EN() {
               <li className="option">context API</li>
             </ol>
             <br />
-            <p style={{direction:"ltr" }}>
-              {`
-              Interested in learning more advanced topics such as Next.js
-              `}
-            </p>
           </p>  
         </Col>
     </>

@@ -41,8 +41,6 @@ export default function Individual_characteristics({mobileSize}) {
                     در تمامی کار هایم از جمله برنامه هام و برنامه نویسی از نرم افزار هایی مثل Microsoft Todo و برنامه پیش رفته notion برای مدیریت استفاده میکنم
                     تجربه کوچکی در کار با Trello دارم
                     
-                    در رابطه با مهارت های فرعی Microsoft word,Microsoft PowerPoint را به صورت کامل مسلط هستم
-                    
                     در کنار برنامه نویسی اگر بعضی از مهارت ها برای بنده و هم شرکت مفید باشد علاقه مند به یادگیری هستم
                     `}
                 </p>
