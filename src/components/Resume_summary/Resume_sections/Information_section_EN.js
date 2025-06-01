@@ -11,8 +11,7 @@ export default function Information_section_EN() {
             <p style={{direction:"ltr"}}>
               {
               `Front-end web developer specializing in the React framework
-              Strong command of core web technologies: HTML, CSS, and JavaScript
-              Learning TypeScript in full.
+              Strong command of core web technologies: HTML, CSS, and JavaScript,typescript
               Proficient in React, including both foundational and advanced concepts such as:
               `}
             </p>

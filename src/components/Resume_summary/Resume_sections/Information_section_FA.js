@@ -10,8 +10,7 @@ export default function Information_section_FA() {
             <h5 className="job">برنامه نویس فرانت سایت</h5>
             <p>
               {`برنامه نویس فرانت سایت با فریم ورک React
-              مسلط به تمامی مباحث پایه HTML,CSS,Javascript
-              در حال یادگیری typescript به صورت کامل
+              مسلط به تمامی مباحث پایه HTML,CSS,Javascript,typescript
               در زمینه React مسلط به مباحث اصلی و پایه و پیشرفته از جمله:`}
             </p>
             

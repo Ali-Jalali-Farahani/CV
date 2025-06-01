@@ -21,6 +21,7 @@ export default function Educational_background() {
           <div className='university_details'>
               <h5>Bachelor of Computer Engineering</h5>
               <h6>University: Semnan University</h6>
+              <h6>GPA: 17.03</h6>
           </div>
         </>    
       ):(
@@ -31,6 +32,7 @@ export default function Educational_background() {
           <div className='university_details'>
               <h5>کارشناسی مهندسی کامپیوتر</h5>
               <h6>دانشگاه:دولتی سمنان</h6>
+              <h6>معدل:17.03</h6>
           </div>
         </>
       )}
